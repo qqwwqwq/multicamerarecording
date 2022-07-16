@@ -30,24 +30,18 @@ def play(playback: PyK4APlayback):
 def main() -> None:
 
 
-    filename: str = "/home/tcy/Desktop/t2.MKV"
-    filename2: str = "/home/tcy/Desktop/t2.MKV"
+    filename: str = "/home/hexin/桌面/t.MKV"
     offset: float = 0
 
     playback = PyK4APlayback(filename)
-    # playback2= PyK4APlayback(filename2)
     playback.open()
-    # playback2.open()
 
     info(playback)
-    # info(playback2)
+
     if offset != 0.0:
         playback.seek(int(offset * 1000000))
     play(playback)
-    # if offset != 0.0:
-    #     playback2.seek(int(offset * 1000000))
-    # play(playback2)
-    # playback2.close()
+
     playback.close()
 
 
