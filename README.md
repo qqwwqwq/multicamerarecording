@@ -23,9 +23,11 @@ filename: str = "/mnt/storage/buildwin/multicameradata/A5-(22-07-2022-20-26-06)_
 **1.[Install the Azure Kinect SDK](https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/develop/docs/usage.md)**
 
 **2.Config the environment variables** 
+
 Add the pyk4a.dll directory to the "Path". (Default is "C:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\AMD64\release\bin")
 
 **3.Installation via Conda** 
+
 *Preparing conda env: (Assuming you have conda installed)*
 ```
 # We require python>=3.6
@@ -39,10 +41,12 @@ pip install pyk4a --no-use-pep517 --global-option=build_ext --global-option="-IC
 ```
 
 **4.Record and save**  
+
 *run main.py.*.   
 *"r" on the keyboard for record, "s" on the keyboard for record for save*.   
 
 **5.Replay**.  
+
 *change the path of video for replay*
 ```
 filename: str = "D:/multicameradata/A5-(22-07-2022-20-26-06)__c1.MKV"
