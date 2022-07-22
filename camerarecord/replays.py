@@ -30,7 +30,9 @@ def play(playback: PyK4APlayback):
 def main() -> None:
 
 
-    filename: str = "/home/hexin/桌面/t.MKV"
+    filename: str = "/mnt/storage/buildwin/multicameradata/A5-(22-07-2022-20-26-06)__c1.MKV"
+
+
     offset: float = 0
 
     playback = PyK4APlayback(filename)
