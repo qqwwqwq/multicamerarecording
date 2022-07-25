@@ -29,6 +29,7 @@ Add the pyk4a.dll directory to the "Path". (Default is "C:\Program Files\Azure K
 **3.Install the dependency** 
 
 *（Optional）Virtualenv interpreter Via Conda*
+
 Preparing conda env: (Assuming you have conda installed)
 ```
 # We require python>=3.6
@@ -37,6 +38,7 @@ conda activate multicamera
 ```
 
 *The system interpreter can also be utilized directly, only need PIP3 to install the required packages*
+
 *Install requirements*
 ```
 pip3 install opencv-contrib-python
