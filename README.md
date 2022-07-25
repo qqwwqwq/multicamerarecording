@@ -26,14 +26,17 @@ filename: str = "/mnt/storage/buildwin/multicameradata/A5-(22-07-2022-20-26-06)_
 
 Add the pyk4a.dll directory to the "Path". (Default is "C:\Program Files\Azure Kinect SDK v1.4.1\sdk\windows-desktop\AMD64\release\bin")
 
-**3.Installation via Conda** 
+**3.Install the dependency** 
 
-*Preparing conda env: (Assuming you have conda installed)*
+*（Optional）Virtualenv interpreter Via Conda*
+Preparing conda env: (Assuming you have conda installed)
 ```
 # We require python>=3.6
 conda create -n multicamera python=3.6
 conda activate multicamera
 ```
+
+*The system interpreter can also be utilized directly, only need PIP3 to install the required packages*
 *Install requirements*
 ```
 pip3 install opencv-contrib-python
