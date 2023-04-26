@@ -94,14 +94,9 @@ if __name__ == "__main__":
 			ref_x_B = 0
 			ref_y_B = 0
 			ref_z_B = 0
-			if num_bodies == 1:
-				if len(cenp(center1)) == 0:
-					body_handle = body_frame.get_body(0).handle()
-					center1 = body_handle
-					current1 = body_frame.get_body(0).handle()
-				else:
-					body_handle = body_frame.get_body(0).handle()
-					current1 = body_handle
+			
+			current1 = body_frame.get_body(0).handle()
+				
 
 			for body_id in range(num_bodies):
 				skeleton_handle = k4abt_skeleton_t()
